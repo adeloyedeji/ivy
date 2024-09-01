@@ -185,9 +185,9 @@ torch_promotion_table = {
 }
 
 
-@handle_exceptions
-def device(dev):
-    return ivy.default_device(dev)
+class device:
+    def __new__(cls, dev):
+        return ivy.default_device(dev)
 
 
 @handle_exceptions
@@ -265,7 +265,17 @@ def promote_types_of_torch_inputs(
 
 
 from . import nn
-from .nn.functional import softmax, relu, lstm
+from .nn.functional import (
+    softmax,
+    relu,
+    lstm,
+    conv1d,
+    conv2d,
+    conv3d,
+    conv_transpose1d,
+    conv_transpose2d,
+    conv_transpose3d,
+)
 from . import special
 from . import tensor
 from . import _VF
@@ -299,6 +309,7 @@ from .tensor_functions import *
 from . import utilities
 from .utilities import *
 from . import linalg
+from .linalg import lu
 from . import func
 from .func import *
 

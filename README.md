@@ -1,9 +1,9 @@
 <div style="display: block;" align="center">
-    <img class="only-dark" width="50%" src="https://raw.githubusercontent.com/ivy-llc/ivy-llc.github.io/main/src/assets/full_logo_dark_long.svg#gh-dark-mode-only"/>
+    <img class="only-dark" width="50%" src="https://raw.githubusercontent.com/ivy-llc/assets/ef677f0eb3e9ee756cf766e3ac0088eb8c187713/assets/full_logo_dark_long.svg#gh-dark-mode-only"/>
 </div>
 
 <div style="display: block;" align="center">
-    <img class="only-light" width="50%" src="https://raw.githubusercontent.com/ivy-llc/ivy-llc.github.io/main/src/assets/full_logo_light_long.svg#gh-light-mode-only"/>
+    <img class="only-light" width="50%" src="https://raw.githubusercontent.com/ivy-llc/assets/ef677f0eb3e9ee756cf766e3ac0088eb8c187713/assets/full_logo_light_long.svg#gh-light-mode-only"/>
 </div>
 
 ------------------------------------------------------------------------
@@ -51,7 +51,7 @@
     <a href="https://github.com/ivy-llc/ivy/actions?query=workflow%3Adocs">
         <img class="dark-light" style="padding-right: 4px; padding-bottom: 4px;" src="https://github.com/ivy-llc/ivy/actions/workflows/docs.yml/badge.svg">
     </a>
-    <a href="https://discord.gg/r5mcSAfp">
+    <a href="https://discord.gg/uYRmyPxMQq">
         <img class="dark-light" style="padding-right: 4px; padding-bottom: 4px;" src="https://img.shields.io/discord/1220325004013604945?color=blue&label=%20&logo=discord&logoColor=white">
     </a>
 </div>
@@ -64,7 +64,6 @@ Ivy is an open-source machine learning framework that enables you to:
 
 - Convert ML models, tools and libraries between frameworks while maintaining complete functionality using `ivy.transpile`
 - Create optimized graph-based models and functions in any native framework (PyTorch, TensorFlow, etc..) with `ivy.trace_graph`
-- Use your ML models or functions in any framework using a graph-tracing approach with `ivy.graph_transpile` *(deprecated)*
 
 <div style="display: block;" align="center">
     <div>
@@ -129,6 +128,20 @@ page, where OS-specific and IDE-specific instructions and video
 tutorials to do so are available!
 
 </details>
+
+<br>
+
+# Supported Frameworks
+
+These are the frameworks that `ivy.transpile` currently supports conversions from and to.
+We're working hard on adding support for more frameworks, let us know on [Discord](https://discord.gg/uYRmyPxMQq) if there are source/target frameworks that would be useful for you!
+
+| Framework  | Source | Target |
+|------------|:------:|:------:|
+| PyTorch    |   ✅   |   🚧   |
+| TensorFlow |   🚧   |   ✅   |
+| JAX        |   🚧   |   🚧   |
+| NumPy      |   🚧   |   🚧   |
 
 <br>
 
@@ -1214,7 +1227,7 @@ in the docs! Or to immediately dive into a useful task, look for any failing tes
 
 Join our growing community on a mission to make conversions between frameworks simple and accessible to all!
 Whether you are a seasoned developer or just starting out, you\'ll find a place here! Join the Ivy community on
-our [Discord](https://discord.gg/mMnS8Egy) 👾 server, which is the
+our [Discord](https://discord.gg/uYRmyPxMQq) 👾 server, which is the
 perfect place to ask questions, share ideas, and get help from both
 fellow developers and the Ivy Team directly.
 
